@@ -62,7 +62,6 @@
   },
   "commandUnload": [
     "toilet.js",
-    "flirt.js",
     "imagine.js"
   ]
 }
