@@ -5,7 +5,7 @@
   },
   {
     "name": "help",
-    "usage": 235
+    "usage": 244
   },
   {
     "name": "count",
@@ -29,11 +29,11 @@
   },
   {
     "name": "",
-    "usage": 361
+    "usage": 363
   },
   {
     "name": "all",
-    "usage": 56
+    "usage": 57
   },
   {
     "name": "ytb",
@@ -145,7 +145,7 @@
   },
   {
     "name": "4k",
-    "usage": 23
+    "usage": 24
   },
   {
     "name": "anivoice",
@@ -213,11 +213,11 @@
   },
   {
     "name": "admin",
-    "usage": 37
+    "usage": 39
   },
   {
     "name": "cs2",
-    "usage": 22
+    "usage": 23
   },
   {
     "name": "python",
@@ -281,11 +281,11 @@
   },
   {
     "name": "slap",
-    "usage": 128
+    "usage": 129
   },
   {
     "name": "buttslap",
-    "usage": 44
+    "usage": 45
   },
   {
     "name": "album",
@@ -309,7 +309,7 @@
   },
   {
     "name": "adduser",
-    "usage": 23
+    "usage": 33
   },
   {
     "name": "kick",
@@ -481,7 +481,7 @@
   },
   {
     "name": "kiss",
-    "usage": 36
+    "usage": 37
   },
   {
     "name": "animefy",
@@ -653,7 +653,7 @@
   },
   {
     "name": "tag",
-    "usage": 29
+    "usage": 32
   },
   {
     "name": "relationship",
@@ -761,7 +761,7 @@
   },
   {
     "name": "join",
-    "usage": 5
+    "usage": 6
   },
   {
     "name": "pair@labiba",
@@ -805,7 +805,7 @@
   },
   {
     "name": "respect",
-    "usage": 11
+    "usage": 13
   },
   {
     "name": "pir5",
@@ -997,7 +997,7 @@
   },
   {
     "name": "vip",
-    "usage": 98
+    "usage": 99
   },
   {
     "name": "18",
@@ -1049,7 +1049,7 @@
   },
   {
     "name": "pp",
-    "usage": 37
+    "usage": 38
   },
   {
     "name": "link",
@@ -1249,7 +1249,7 @@
   },
   {
     "name": "flirting",
-    "usage": 1
+    "usage": 3
   },
   {
     "name": "sorthelp",
@@ -1265,7 +1265,7 @@
   },
   {
     "name": "flirt",
-    "usage": 5
+    "usage": 7
   },
   {
     "name": "move",
@@ -1273,7 +1273,7 @@
   },
   {
     "name": "user",
-    "usage": 12
+    "usage": 17
   },
   {
     "name": "bby2",
@@ -1357,7 +1357,7 @@
   },
   {
     "name": "setleave",
-    "usage": 5
+    "usage": 11
   },
   {
     "name": "send",
@@ -1589,7 +1589,7 @@
   },
   {
     "name": "nude",
-    "usage": 14
+    "usage": 18
   },
   {
     "name": "running",
@@ -1957,7 +1957,7 @@
   },
   {
     "name": "u",
-    "usage": 92
+    "usage": 95
   },
   {
     "name": "kiss@angel",
@@ -2133,7 +2133,7 @@
   },
   {
     "name": "setwelcome",
-    "usage": 7
+    "usage": 8
   },
   {
     "name": "rbg",
@@ -2765,7 +2765,7 @@
   },
   {
     "name": "badword",
-    "usage": 1
+    "usage": 5
   },
   {
     "name": "haci",
@@ -2813,6 +2813,38 @@
   },
   {
     "name": "atenos",
+    "usage": 1
+  },
+  {
+    "name": "wlt",
+    "usage": 9
+  },
+  {
+    "name": "wl",
+    "usage": 6
+  },
+  {
+    "name": "uptime2",
+    "usage": 1
+  },
+  {
+    "name": "fbreport",
+    "usage": 1
+  },
+  {
+    "name": "callbomber",
+    "usage": 1
+  },
+  {
+    "name": "kickalk",
+    "usage": 1
+  },
+  {
+    "name": "kickall",
+    "usage": 1
+  },
+  {
+    "name": "noti",
     "usage": 1
   }
 ]
