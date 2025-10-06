@@ -44,7 +44,7 @@ module.exports = {
     author: "Vex_Kshitiz",
     version: "1.0",
     cooldowns: 5,
-    role: 0,
+    role: 2,
     shortDescription: "Watch hentai",
     longDescription: "Get hentai episode download links",
     category: "Hentai",
