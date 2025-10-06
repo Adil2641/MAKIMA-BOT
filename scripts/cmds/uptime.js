@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs-extra");
 const path = require("path");
 
-// Dynamic API URL fetcher from your first script
+// 🌐 Dynamic API base from GitHub (Dipto System)
 const baseApiUrl = async () => {
   const base = await axios.get(
     `https://raw.githubusercontent.com/Adil2641/D1PT0/refs/heads/main/baseApiUrl.json`
@@ -14,91 +14,102 @@ module.exports = {
   config: {
     name: "uptime",
     aliases: ["up", "upt"],
-    version: "1.1",
-    author: "Vex_kshitiz & Dipto",
+    version: "2.0",
+    author: "✨ Vex_Kshitiz & 🧠 Dipto",
     role: 0,
     shortDescription: {
-      en: "Displays the bot's uptime."
+      en: "⏰ Show bot's uptime with a Makima vibe 💞"
     },
     longDescription: {
-      en: "Find out how long the bot has been tirelessly serving you."
+      en: "💫 Check how long your bot has been alive — with a random Makima image for a cool aesthetic touch 💋"
     },
-    category: "owner",
+    category: "👑 Owner",
     guide: {
-      en: "Use {p}uptime to reveal the bot's operational duration."
+      en: "💡 Use: {p}uptime"
     }
   },
 
-  onStart: async function ({ api, event, args }) {
+  onStart: async function ({ api, event }) {
     try {
-      // Makima-related queries
+      // 💖 Makima-themed search keywords
       const searchQueries = [
+        "Makima aesthetic",
         "Makima cute pic",
-        "Makima",
-        "Chainsawman Couple",
-        "Chainsawman Makima",
-        "Makima anime latest pic"
+        "Chainsaw Man Makima",
+        "Makima anime art",
+        "Chainsawman couple wallpaper"
       ];
 
-      // Pick a random query
+      // 🎲 Pick a random one
       const randomQuery = searchQueries[Math.floor(Math.random() * searchQueries.length)];
 
-      // Use dynamic base URL from GitHub
+      // 🌐 Fetch from Dipto’s base API
       const apiBase = await baseApiUrl();
       const apiUrl = `${apiBase}/pinterest?search=${encodeURIComponent(randomQuery)}&limit=10`;
 
-      // Fetch images
       const response = await axios.get(apiUrl);
       const images = response.data.data;
 
       if (!images || images.length === 0) {
-        return api.sendMessage("❌ No images found from Pinterest API.", event.threadID, event.messageID);
+        return api.sendMessage("❌ No Makima images found right now!", event.threadID, event.messageID);
       }
 
-      // Pick a random image
+      // 🖼️ Choose a random image
       const randomImage = images[Math.floor(Math.random() * images.length)];
-
-      // Download and save the image
       const imageRes = await axios.get(randomImage, { responseType: "arraybuffer" });
+
       const imgFolder = path.join(__dirname, "cache");
       await fs.ensureDir(imgFolder);
       const imagePath = path.join(imgFolder, `uptime_${Date.now()}.jpg`);
       await fs.outputFile(imagePath, imageRes.data);
 
-      // Calculate uptime
+      // ⏳ Calculate uptime
       const uptime = process.uptime();
       const days = Math.floor(uptime / (60 * 60 * 24));
       const hours = Math.floor((uptime / (60 * 60)) % 24);
       const minutes = Math.floor((uptime / 60) % 60);
       const seconds = Math.floor(uptime % 60);
 
-      let uptimeString = `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
+      // 🕰️ Build human-readable uptime string
+      let uptimeString = `🕓 ${days}d ${hours}h ${minutes}m ${seconds}s`;
       if (days === 0) {
-        uptimeString = `${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
+        uptimeString = `🕓 ${hours}h ${minutes}m ${seconds}s`;
         if (hours === 0) {
-          uptimeString = `${minutes} minutes, and ${seconds} seconds`;
+          uptimeString = `🕓 ${minutes}m ${seconds}s`;
           if (minutes === 0) {
-            uptimeString = `${seconds} seconds`;
+            uptimeString = `🕓 ${seconds}s`;
           }
         }
       }
 
-      // Send the message
-      const msg = `𝐇𝐞𝐥𝐥𝐨 𝐌𝐚𝐬𝐭𝐞𝐫👑\n🤖 𝐓𝐡𝐞 𝐛𝐨𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐚𝐥𝐢𝐯𝐞 𝐟𝐨𝐫:\n⏱️ ${uptimeString}`;
+      // 💌 Build fancy message
+      const msg = `
+╔══❖◆❖══╗
+✨ 𝑩𝒐𝒕 𝑼𝒑𝒕𝒊𝒎𝒆 𝑺𝒕𝒂𝒕𝒖𝒔 ✨
+╚══❖◆❖══╝
+
+👑 𝐇𝐞𝐥𝐥𝐨 𝐌𝐚𝐬𝐭𝐞𝐫,
+🤖 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐚𝐜𝐭𝐢𝐯𝐞 𝐟𝐨𝐫:
+${uptimeString}
+
+💖 𝐌𝐚𝐤𝐢𝐦𝐚 𝐬𝐚𝐲𝐬: “𝐊𝐞𝐞𝐩 𝐦𝐞 𝐨𝐧𝐥𝐢𝐧𝐞, 𝐌𝐚𝐬𝐭𝐞𝐫~ 💋”
+      `;
+
+      // 💬 Send message with image
       await api.sendMessage(
         {
-          body: msg,
-          attachment: fs.createReadStream(imagePath),
+          body: msg.trim(),
+          attachment: fs.createReadStream(imagePath)
         },
         event.threadID,
         event.messageID
       );
 
-      // Clean up
+      // 🧹 Clean cache
       await fs.unlink(imagePath);
     } catch (error) {
-      console.error("Uptime command error:", error.message);
-      return api.sendMessage("❌ An error occurred while fetching the uptime or image.", event.threadID, event.messageID);
+      console.error("⚠️ Uptime Command Error:", error.message);
+      return api.sendMessage("❌ Something went wrong while fetching uptime!", event.threadID, event.messageID);
     }
   }
 };
