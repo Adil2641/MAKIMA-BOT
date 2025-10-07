@@ -1,15 +1,15 @@
 [
   {
     "name": "u",
-    "usage": 9
+    "usage": 21
   },
   {
     "name": "pair",
-    "usage": 24
+    "usage": 35
   },
   {
     "name": "join",
-    "usage": 1
+    "usage": 3
   },
   {
     "name": "setname",
@@ -21,15 +21,15 @@
   },
   {
     "name": "file",
-    "usage": 2
+    "usage": 3
   },
   {
     "name": "wl",
-    "usage": 4
+    "usage": 8
   },
   {
     "name": "paie",
-    "usage": 1
+    "usage": 2
   },
   {
     "name": "translate",
@@ -41,11 +41,11 @@
   },
   {
     "name": "",
-    "usage": 2
+    "usage": 4
   },
   {
     "name": "antileave",
-    "usage": 2
+    "usage": 3
   },
   {
     "name": "antiout",
@@ -61,11 +61,11 @@
   },
   {
     "name": "help",
-    "usage": 4
+    "usage": 8
   },
   {
     "name": "admin",
-    "usage": 4
+    "usage": 5
   },
   {
     "name": "say",
@@ -93,11 +93,11 @@
   },
   {
     "name": "sing",
-    "usage": 8
+    "usage": 9
   },
   {
     "name": "ytb",
-    "usage": 3
+    "usage": 6
   },
   {
     "name": "2",
@@ -121,6 +121,82 @@
   },
   {
     "name": "pp",
+    "usage": 1
+  },
+  {
+    "name": "pending",
+    "usage": 1
+  },
+  {
+    "name": "pin",
+    "usage": 4
+  },
+  {
+    "name": "pairdp",
+    "usage": 54
+  },
+  {
+    "name": "coupledp",
+    "usage": 2
+  },
+  {
+    "name": "del",
+    "usage": 2
+  },
+  {
+    "name": "paridp",
+    "usage": 1
+  },
+  {
+    "name": "wlt",
+    "usage": 1
+  },
+  {
+    "name": "up",
+    "usage": 1
+  },
+  {
+    "name": "clear",
+    "usage": 1
+  },
+  {
+    "name": "warn",
+    "usage": 1
+  },
+  {
+    "name": "acp",
+    "usage": 4
+  },
+  {
+    "name": "badword",
+    "usage": 7
+  },
+  {
+    "name": "respect",
+    "usage": 1
+  },
+  {
+    "name": "hotpairdp",
+    "usage": 1
+  },
+  {
+    "name": "ship",
+    "usage": 1
+  },
+  {
+    "name": "pair2",
+    "usage": 2
+  },
+  {
+    "name": "buttslap",
+    "usage": 1
+  },
+  {
+    "name": "clear2",
+    "usage": 1
+  },
+  {
+    "name": "offbot",
     "usage": 1
   }
 ]
