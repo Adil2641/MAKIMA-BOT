@@ -8,9 +8,9 @@ const jsonUrl = "https://raw.githubusercontent.com/Adil2641/Adil-API/refs/heads/
 module.exports = {
   config: {
     name: "pairdp",
-    aliases: ["coupledp", "pair"],
+    aliases: ["coupledp", "pdp"],
     version: "6.0",
-    author: "Dipto",
+    author: "ChatGPT + Adil",
     countDown: 10,
     role: 0,
     category: "fun",
