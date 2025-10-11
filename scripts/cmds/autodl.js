@@ -1,8 +1,8 @@
 const axios = require("axios");
 const fs = require("fs-extra");
-const tinyurl = require("tinyurl");
+//const tinyurl = require("tinyurl");
 const baseApiUrl = async () => {
-  const base = await axios.get(`https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json`);
+  const base = await axios.get(`https://raw.githubusercontent.com/Adil2641/D1PT0/refs/heads/main/baseApiUrl.json`);
   return base.data.api;
 };
 
@@ -17,7 +17,7 @@ const config = {
   usePrefix: true,
   prefix: true,
   dependencies: {
-    "tinyurl": "",
+   // "tinyurl": "",
     "fs-extra": "",
   },
 };
@@ -35,13 +35,13 @@ const onChat = async ({ api, event }) => {
       dipto.startsWith("https://youtube.com/") ||
       dipto.startsWith("https://x.com/") ||
       dipto.startsWith("https://youtube.com/")
-      dipto.startsWith("https://www.instagram.com/p/") ||
+|| dipto.startsWith("https://www.instagram.com/p/") ||
       dipto.startsWith("https://pin.it/") ||
       dipto.startsWith("https://twitter.com/") ||
       dipto.startsWith("https://vm.tiktok.com") ||
       dipto.startsWith("https://fb.watch")
     ) {
-      api.setMessageReaction("⌛", event.messageID, true);
+      api.setMessageReaction("⌛", event.messageID, {}, true);
       const w = await api.sendMessage("Wait Bby <😘", event.threadID);
       const response = await axios.get(`${await baseApiUrl()}/alldl?url=${encodeURIComponent(dipto)}`);
       const d = response.data;
@@ -60,17 +60,17 @@ const onChat = async ({ api, event }) => {
       }
       const path = __dirname + `/cache/video${ex}`;
       fs.writeFileSync(path, Buffer.from((await axios.get(d.result, { responseType: "arraybuffer" })).data, "binary"));
-      const shortUrl = await tinyurl.shorten(d.result);
-      api.setMessageReaction("✅", event.messageID, true);
+      const tinyUrlResponse = await axios.get(`https://tinyurl.com/api-create.php?url=${d.result}`);
+      api.setMessageReaction("✅", event.messageID, {}, true);
       api.unsendMessage(w.messageID);
       await api.sendMessage({
-          body: `${d.cp || null}\n✅ | Link: ${shortUrl || null}`,
+          body: `${d.cp || null}\n✅ | Link: ${tinyUrlResponse.data || null}`,
           attachment: fs.createReadStream(path),
         }, event.threadID, () => fs.unlinkSync(path), event.messageID
       )
     }
   } catch (err) {
-    api.setMessageReaction("❌", event.messageID, true);
+    api.setMessageReaction("❌", event.messageID, {}, true);
     console.log(err);
     api.sendMessage(`Error: ${err.message}`, event.threadID, event.messageID);
   }
