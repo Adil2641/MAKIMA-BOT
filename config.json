@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "kotoyi4262@citdaca.com",
-    "password": "t1l321@",
+    "email": "",
+    "password": "",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -28,7 +28,8 @@
       "100086142037942",
       "100058342072915",
       "61556512630729",
-      "61560479468395"
+      "61560479468395",
+      "100093780976290"
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
   },
