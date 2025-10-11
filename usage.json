@@ -1,7 +1,7 @@
 [
   {
     "name": "u",
-    "usage": 21
+    "usage": 22
   },
   {
     "name": "pair",
@@ -25,7 +25,7 @@
   },
   {
     "name": "wl",
-    "usage": 8
+    "usage": 13
   },
   {
     "name": "paie",
@@ -41,7 +41,7 @@
   },
   {
     "name": "",
-    "usage": 4
+    "usage": 5
   },
   {
     "name": "antileave",
@@ -61,11 +61,11 @@
   },
   {
     "name": "help",
-    "usage": 8
+    "usage": 9
   },
   {
     "name": "admin",
-    "usage": 5
+    "usage": 6
   },
   {
     "name": "say",
@@ -133,7 +133,7 @@
   },
   {
     "name": "pairdp",
-    "usage": 54
+    "usage": 64
   },
   {
     "name": "coupledp",
@@ -198,5 +198,49 @@
   {
     "name": "offbot",
     "usage": 1
+  },
+  {
+    "name": "pairdp2",
+    "usage": 4
+  },
+  {
+    "name": "cs",
+    "usage": 1
+  },
+  {
+    "name": "cs2",
+    "usage": 1
+  },
+  {
+    "name": "autodl",
+    "usage": 1
+  },
+  {
+    "name": "waifu",
+    "usage": 2
+  },
+  {
+    "name": "ghibli",
+    "usage": 1
+  },
+  {
+    "name": "art",
+    "usage": 3
+  },
+  {
+    "name": "mj",
+    "usage": 1
+  },
+  {
+    "name": "gcn",
+    "usage": 1
+  },
+  {
+    "name": "ngc",
+    "usage": 1
+  },
+  {
+    "name": "kick",
+    "usage": 2
   }
 ]
