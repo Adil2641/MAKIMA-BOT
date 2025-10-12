@@ -20,10 +20,11 @@
     "100078140834638",
     "61556006709662",
     "61569162849783",
-    "100003843460849"
+    "100003843460849",
+    "61556512630729"
   ],
   "whiteListMode": {
-    "enable": true,
+    "enable": false,
     "whiteListIds": [
       "100086142037942",
       "100058342072915",
@@ -42,7 +43,7 @@
   "database": {
     "type": "mongodb",
     "uriMongodb": "mongodb+srv://risingabir1:amPSSuawHXmkSxKk@cluster0.bpdm4.mongodb.net/Maki-BOT?retryWrites=true&w=majority&appName=Cluster0",
-    "autoSyncWhenStart": false,
+    "autoSyncWhenStart": true,
     "autoRefreshThreadInfoFirstTime": true,
     "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
   },
