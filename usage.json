@@ -1,11 +1,11 @@
 [
   {
     "name": "u",
-    "usage": 22
+    "usage": 36
   },
   {
     "name": "pair",
-    "usage": 47
+    "usage": 66
   },
   {
     "name": "join",
@@ -37,11 +37,11 @@
   },
   {
     "name": "adduser",
-    "usage": 2
+    "usage": 6
   },
   {
     "name": "",
-    "usage": 9
+    "usage": 17
   },
   {
     "name": "antileave",
@@ -49,7 +49,7 @@
   },
   {
     "name": "antiout",
-    "usage": 1
+    "usage": 3
   },
   {
     "name": "hentan",
@@ -61,19 +61,19 @@
   },
   {
     "name": "help",
-    "usage": 9
+    "usage": 11
   },
   {
     "name": "admin",
-    "usage": 6
+    "usage": 12
   },
   {
     "name": "say",
-    "usage": 6
+    "usage": 8
   },
   {
     "name": "uid",
-    "usage": 2
+    "usage": 7
   },
   {
     "name": "saybn",
@@ -81,7 +81,7 @@
   },
   {
     "name": "refresh",
-    "usage": 1
+    "usage": 2
   },
   {
     "name": "user",
@@ -93,7 +93,7 @@
   },
   {
     "name": "sing",
-    "usage": 11
+    "usage": 12
   },
   {
     "name": "ytb",
@@ -105,7 +105,7 @@
   },
   {
     "name": "all",
-    "usage": 2
+    "usage": 3
   },
   {
     "name": "sing3",
@@ -121,7 +121,7 @@
   },
   {
     "name": "pp",
-    "usage": 1
+    "usage": 4
   },
   {
     "name": "pending",
@@ -133,7 +133,7 @@
   },
   {
     "name": "pairdp",
-    "usage": 69
+    "usage": 81
   },
   {
     "name": "coupledp",
@@ -153,7 +153,7 @@
   },
   {
     "name": "up",
-    "usage": 1
+    "usage": 2
   },
   {
     "name": "clear",
@@ -201,7 +201,7 @@
   },
   {
     "name": "pairdp2",
-    "usage": 18
+    "usage": 25
   },
   {
     "name": "cs",
@@ -225,7 +225,7 @@
   },
   {
     "name": "art",
-    "usage": 3
+    "usage": 4
   },
   {
     "name": "mj",
@@ -253,6 +253,46 @@
   },
   {
     "name": "c;lear",
+    "usage": 1
+  },
+  {
+    "name": "nude",
+    "usage": 1
+  },
+  {
+    "name": "prefix",
+    "usage": 1
+  },
+  {
+    "name": "pairdp3",
+    "usage": 1
+  },
+  {
+    "name": "imagine",
+    "usage": 1
+  },
+  {
+    "name": "unsend",
+    "usage": 2
+  },
+  {
+    "name": "marry",
+    "usage": 3
+  },
+  {
+    "name": "profile",
+    "usage": 1
+  },
+  {
+    "name": "slap",
+    "usage": 2
+  },
+  {
+    "name": "p",
+    "usage": 1
+  },
+  {
+    "name": "spam",
     "usage": 1
   }
 ]
