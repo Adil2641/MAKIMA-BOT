@@ -5,7 +5,7 @@
   },
   {
     "name": "pair",
-    "usage": 35
+    "usage": 47
   },
   {
     "name": "join",
@@ -25,7 +25,7 @@
   },
   {
     "name": "wl",
-    "usage": 13
+    "usage": 14
   },
   {
     "name": "paie",
@@ -41,7 +41,7 @@
   },
   {
     "name": "",
-    "usage": 5
+    "usage": 9
   },
   {
     "name": "antileave",
@@ -93,7 +93,7 @@
   },
   {
     "name": "sing",
-    "usage": 9
+    "usage": 11
   },
   {
     "name": "ytb",
@@ -133,7 +133,7 @@
   },
   {
     "name": "pairdp",
-    "usage": 64
+    "usage": 69
   },
   {
     "name": "coupledp",
@@ -157,7 +157,7 @@
   },
   {
     "name": "clear",
-    "usage": 1
+    "usage": 4
   },
   {
     "name": "warn",
@@ -193,7 +193,7 @@
   },
   {
     "name": "clear2",
-    "usage": 1
+    "usage": 3
   },
   {
     "name": "offbot",
@@ -201,7 +201,7 @@
   },
   {
     "name": "pairdp2",
-    "usage": 4
+    "usage": 18
   },
   {
     "name": "cs",
@@ -213,7 +213,7 @@
   },
   {
     "name": "autodl",
-    "usage": 1
+    "usage": 4
   },
   {
     "name": "waifu",
@@ -241,6 +241,18 @@
   },
   {
     "name": "kick",
-    "usage": 2
+    "usage": 3
+  },
+  {
+    "name": "req",
+    "usage": 1
+  },
+  {
+    "name": "w;",
+    "usage": 1
+  },
+  {
+    "name": "c;lear",
+    "usage": 1
   }
 ]
