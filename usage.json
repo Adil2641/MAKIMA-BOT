@@ -9,7 +9,7 @@
   },
   {
     "name": "join",
-    "usage": 3
+    "usage": 4
   },
   {
     "name": "setname",
@@ -37,11 +37,11 @@
   },
   {
     "name": "adduser",
-    "usage": 6
+    "usage": 7
   },
   {
     "name": "",
-    "usage": 17
+    "usage": 25
   },
   {
     "name": "antileave",
@@ -73,7 +73,7 @@
   },
   {
     "name": "uid",
-    "usage": 7
+    "usage": 8
   },
   {
     "name": "saybn",
@@ -93,11 +93,11 @@
   },
   {
     "name": "sing",
-    "usage": 12
+    "usage": 13
   },
   {
     "name": "ytb",
-    "usage": 6
+    "usage": 7
   },
   {
     "name": "2",
@@ -121,7 +121,7 @@
   },
   {
     "name": "pp",
-    "usage": 4
+    "usage": 6
   },
   {
     "name": "pending",
@@ -133,7 +133,7 @@
   },
   {
     "name": "pairdp",
-    "usage": 81
+    "usage": 82
   },
   {
     "name": "coupledp",
@@ -193,7 +193,7 @@
   },
   {
     "name": "clear2",
-    "usage": 3
+    "usage": 4
   },
   {
     "name": "offbot",
@@ -261,7 +261,7 @@
   },
   {
     "name": "prefix",
-    "usage": 1
+    "usage": 2
   },
   {
     "name": "pairdp3",
@@ -285,7 +285,7 @@
   },
   {
     "name": "slap",
-    "usage": 2
+    "usage": 4
   },
   {
     "name": "p",
@@ -293,6 +293,38 @@
   },
   {
     "name": "spam",
+    "usage": 1
+  },
+  {
+    "name": "info",
+    "usage": 37
+  },
+  {
+    "name": "info2",
+    "usage": 1
+  },
+  {
+    "name": "edit",
+    "usage": 1
+  },
+  {
+    "name": "edit2",
+    "usage": 1
+  },
+  {
+    "name": "post",
+    "usage": 1
+  },
+  {
+    "name": "anisearch",
+    "usage": 1
+  },
+  {
+    "name": "album2",
+    "usage": 1
+  },
+  {
+    "name": "fyp",
     "usage": 1
   }
 ]
