@@ -34,8 +34,8 @@ const onChat = async ({ api, event }) => {
       dipto.startsWith("https://youtu.be/") ||
       dipto.startsWith("https://youtube.com/") ||
       dipto.startsWith("https://x.com/") ||
-      dipto.startsWith("https://youtube.com/")
-|| dipto.startsWith("https://www.instagram.com/p/") ||
+      dipto.startsWith("https://youtube.com/") || 
+      dipto.startsWith("https://www.instagram.com/p/") ||
       dipto.startsWith("https://pin.it/") ||
       dipto.startsWith("https://twitter.com/") ||
       dipto.startsWith("https://vm.tiktok.com") ||
