@@ -6,7 +6,7 @@ const ytSearch = require("yt-search");
 const CACHE_FOLDER = path.join(__dirname, "cache");
 
 async function downloadVideo(videoId, filePath) {
-    const url = `https://yt-dl-2.onrender.com/api/video-download?url=https://www.youtube.com/watch?v=${videoId}&quality=18`;
+    const url = `https://yt-api-0cma.onrender.com/v-dl?url=https://www.youtube.com/watch?v=${videoId}&quality=18`;
     const writer = fs.createWriteStream(filePath);
 
     const response = await axios({
@@ -29,7 +29,7 @@ async function fetchVideoFromReply(api, event, message) {
     }
 
     const shortUrl = attachment.url;
-    const reconApi = `https://yt-dl-2.onrender.com/api/video-info?url=${encodeURIComponent(shortUrl)}`;
+    const reconApi = `https://yt-api-0cma.onrender.com/v-i?url=${encodeURIComponent(shortUrl)}`;
 
     const videoRecResponse = await axios.get(reconApi);
     return {
