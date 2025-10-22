@@ -35,7 +35,7 @@ module.exports = {
       haha: { file: "haha.mp3", text: "「 Na Has Hai muji 」", react: "😒" },
       bankai: { file: "bankai.mp3", text: "「 𝐁𝐚𝐧𝐤𝐚𝐢⛩️ 」", react: "😈" },
       yowaimo: { file: "yowaimo.mp3", text: "「 𝐘𝐨𝐰𝐚𝐢𝐦𝐨🤞 」", react: "🤞" },
-      umai: { file: "umai.mp4", text: "「 𝐔𝐦𝐚𝐢😤😤 」", react: "🐸" },
+      umai: { file: "umai.mp3", text: "「 𝐔𝐦𝐚𝐢😤😤 」", react: "🐸" },
       onichan: { file: "onichan.mp3", text: "「 🍒𝐎𝐧𝐢𝐜𝐡𝐚𝐧🍒 」", react: "🍒" },
       itachi: { file: "itachi.mp3", text: "「 𝐈𝐭𝐚𝐜𝐡𝐢🐦‍⬛ 」", react: "🐦‍⬛" },
       uzumaki: { file: "uzumaki.mp3", text: "「 𝐔𝐳𝐮𝐦𝐚𝐤𝐢🦊 」", react: "🦊" },
