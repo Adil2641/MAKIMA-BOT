@@ -54,7 +54,13 @@ module.exports = {
       const videoLinks = [
         "https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima.mp4",
         "https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-2.mp4",
-        "https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-3.mp4"
+        "https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-3.mp4",
+		"https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-4.mp4",
+		"https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-5.mp4",
+		"https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-6.mp4",
+		"https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-7.mp4",
+		"https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-8.mp4",
+		"https://github.com/Adil2641/Adil-API/raw/refs/heads/main/video/makima-9.mp4",
       ];
       const randomIndex = Math.floor(Math.random() * videoLinks.length);
       const selectedVideo = videoLinks[randomIndex];
