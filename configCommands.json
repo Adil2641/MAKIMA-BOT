@@ -62,6 +62,8 @@
   },
   "commandUnload": [
     "toilet.js",
-    "imagine.js"
+    "imagine.js",
+    "gpt.js",
+    "Ai.js"
   ]
 }

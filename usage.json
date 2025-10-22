@@ -41,7 +41,7 @@
   },
   {
     "name": "",
-    "usage": 25
+    "usage": 28
   },
   {
     "name": "antileave",
@@ -49,7 +49,7 @@
   },
   {
     "name": "antiout",
-    "usage": 3
+    "usage": 5
   },
   {
     "name": "hentan",
@@ -97,7 +97,7 @@
   },
   {
     "name": "ytb",
-    "usage": 7
+    "usage": 9
   },
   {
     "name": "2",
@@ -105,7 +105,7 @@
   },
   {
     "name": "all",
-    "usage": 3
+    "usage": 4
   },
   {
     "name": "sing3",
@@ -117,11 +117,11 @@
   },
   {
     "name": "4k",
-    "usage": 1
+    "usage": 2
   },
   {
     "name": "pp",
-    "usage": 6
+    "usage": 7
   },
   {
     "name": "pending",
@@ -133,7 +133,7 @@
   },
   {
     "name": "pairdp",
-    "usage": 82
+    "usage": 86
   },
   {
     "name": "coupledp",
@@ -165,7 +165,7 @@
   },
   {
     "name": "acp",
-    "usage": 4
+    "usage": 5
   },
   {
     "name": "badword",
@@ -213,7 +213,7 @@
   },
   {
     "name": "autodl",
-    "usage": 4
+    "usage": 6
   },
   {
     "name": "waifu",
@@ -241,7 +241,7 @@
   },
   {
     "name": "kick",
-    "usage": 3
+    "usage": 4
   },
   {
     "name": "req",
@@ -285,7 +285,7 @@
   },
   {
     "name": "slap",
-    "usage": 4
+    "usage": 11
   },
   {
     "name": "p",
@@ -313,7 +313,7 @@
   },
   {
     "name": "post",
-    "usage": 1
+    "usage": 2
   },
   {
     "name": "anisearch",
@@ -325,6 +325,34 @@
   },
   {
     "name": "fyp",
+    "usage": 1
+  },
+  {
+    "name": "silent",
+    "usage": 2
+  },
+  {
+    "name": "story",
+    "usage": 23
+  },
+  {
+    "name": "postfb",
+    "usage": 1
+  },
+  {
+    "name": "storyfb",
+    "usage": 17
+  },
+  {
+    "name": "fbstory",
+    "usage": 1
+  },
+  {
+    "name": "prompt",
+    "usage": 2
+  },
+  {
+    "name": "propmpt",
     "usage": 1
   }
 ]

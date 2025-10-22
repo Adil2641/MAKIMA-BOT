@@ -3,7 +3,7 @@ const fs = require("fs-extra");
 const path = require("path");
 
 // GitHub raw JSON URL
-const jsonUrl = "https://raw.githubusercontent.com/Adil2641/Adil-API/refs/heads/main/pairs.js";
+const jsonUrl = "https://raw.githubusercontent.com/Adil2641/Adil-API/refs/heads/main/pairs.json";
 
 module.exports = {
   config: {
