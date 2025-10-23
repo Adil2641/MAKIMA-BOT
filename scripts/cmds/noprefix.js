@@ -26,7 +26,7 @@ module.exports = {
 
     // 🟩 Base GitHub URL
     const baseUrl =
-      "https://raw.githubusercontent.com/Adil2641/Adil-API/main/no-prefix-cmd/";
+      "https://raw.githubusercontent.com/Adil2641/Adil-Resources/main/no-prefix-cmd/";
 
     // 🎵 / 🎬 Media list
     const media = {

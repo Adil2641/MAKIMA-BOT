@@ -6,7 +6,7 @@ const ytSearch = require("yt-search");
 const CACHE_FOLDER = path.join(__dirname, "cache");
 
 async function downloadAudio(videoUrl, filePath) {
-    const url = `https://yt-api-0cma.onrender.com/a-dl?url=${encodeURIComponent(videoUrl)}`;
+    const url = `https://adil-api.onrender.com/yt/a-dl?url=${encodeURIComponent(videoUrl)}`;
     const writer = fs.createWriteStream(filePath);
 
     const response = await axios({
@@ -29,7 +29,7 @@ async function fetchAudioFromReply(api, event, message) {
     }
 
     const videoUrl = attachment.url;
-    const infoApi = `https://yt-api-0cma.onrender.com/v-i?url=${encodeURIComponent(videoUrl)}`;
+    const infoApi = `https://adil-api.onrender.com/yt/v-i?url=${encodeURIComponent(videoUrl)}`;
 
     const response = await axios.get(infoApi);
     return {
