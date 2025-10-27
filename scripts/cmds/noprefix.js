@@ -70,7 +70,7 @@ module.exports = {
           )
           .join("\n");
       await message.reply(listMsg);
-      await api.setMessageReaction("📋", event.messageID);
+      await api.setMessageReaction("📋", event.messageID, (err) => {}, true);
       return;
     }
 
@@ -105,7 +105,7 @@ module.exports = {
       });
 
       // 💬 Add reaction
-      await api.setMessageReaction(item.react, event.messageID);
+      await api.setMessageReaction(item.react, event.messageID, (err) => {}, true);
 
       // 🧹 Cleanup temp file
       setTimeout(() => fs.unlink(tempPath).catch(() => {}), 15000);
