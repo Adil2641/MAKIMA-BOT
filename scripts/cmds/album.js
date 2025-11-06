@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const baseApiUrl = async () => {
   const base = await axios.get(
-    `https://raw.githubusercontent.com/Mostakim0978/D1PT0/refs/heads/main/baseApiUrl.json`,
+    `https://raw.githubusercontent.com/Adil2641/D1PT0/refs/heads/main/baseApiUrl.json`,
   );
   return base.data.api;
 };

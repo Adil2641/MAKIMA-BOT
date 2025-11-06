@@ -1,1 +1,34 @@
-const axios = require("axios"); module.exports = { config: { name: "4k", aliases: ["upscale"], version: "1.1", role: 0, author: "Fahim_Noob", countDown: 5, longDescription: "Upscale images to 4K resolution.", category: "image", guide: { en: "${pn} reply to an image to upscale it to 4K resolution." } }, onStart: async function ({ message, event }) { if (!event.messageReply || !event.messageReply.attachments || !event.messageReply.attachments[0]) { return message.reply("Please reply to an image to upscale it."); } const imgurl = encodeURIComponent(event.messageReply.attachments[0].url); const noobs = 'xyz'; const upscaleUrl = `https://smfahim.${noobs}/4k?url=${imgurl}`; message.reply("🔄| Processing... Please wait a moment.", async (err, info) => { try { const { data: { image } } = await axios.get(upscaleUrl); const attachment = await global.utils.getStreamFromURL(image, "upscaled-image.png"); message.reply({ body: "✅| Here is your 4K upscaled image:", attachment: attachment }); let processingMsgID = info.messageID; message.unsend(processingMsgID); } catch (error) { console.error(error); message.reply("❌| There was an error upscaling your image."); } }); } };
+const apiUrl = "https://www.noobs-apis.run.place";
+
+module.exports = {
+  config: {
+  name: "upscale",
+  aliases: ["4k", "ups"],
+  version: "1.6.9",
+  author: "Nazrul",
+  role: 0,
+  description: "Upscale image by URL or reply",
+  category: "image",
+  countDown: 9,
+  guide: { en: "{pn} [url] or reply to image" }
+  },
+
+  onStart: async ({ message, event, args }) => {
+ const s = Date.now();
+let imgUrl; if (event.messageReply?.attachments?.[0]?.type === "photo") { imgUrl = event.messageReply.attachments[0].url } else if (args[0]) { imgUrl = args.join(" ")}
+
+  if (!imgUrl) {
+      return message.reply("• Reply to image or provide imgUrl!");
+    }
+  message.reaction('🦆', event.messageID);
+    try {
+      const res = await require('axios').get(`${apiUrl}/nazrul/upscale?imgUrl=${encodeURIComponent(imgUrl)}`, { responseType: "stream" });
+  message.reaction('✅', event.messageID);
+  const t = ((Date.now() - s) / 1000).toFixed(2);
+  message.reply({ body: `✅ Here's your Upscaled Image!\n⌛ Process time : ${t} `, attachment: res.data });
+    } catch (error) {
+      message.reaction('❌', event.messageID);
+      message.reply(`error: ${error.message}`);
+    }
+  }
+};
