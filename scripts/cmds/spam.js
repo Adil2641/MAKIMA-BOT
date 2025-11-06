@@ -69,14 +69,24 @@ module.exports = {
           ext = path.extname(pathname) || ext;
         } catch { /* keep default */ }
 
-        const tmpFilename = path.join(process.cwd(), `tmp_spam_${Date.now()}${ext}`);
+        // --- Save temp file into the cache folder (scripts/cmds/cache) ---
+        const cacheDir = path.join(__dirname, "cache"); // __dirname is the folder containing this cmd
+        try {
+          if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
+        } catch (e) {
+          // if we can't create cache dir, fallback to process.cwd()
+          console.warn("Could not create cache dir, falling back to process.cwd():", e);
+        }
+
+        const tmpFilename = path.join(fs.existsSync(cacheDir) ? cacheDir : process.cwd(), `tmp_spam_${Date.now()}${ext}`);
 
         // Try downloading attachment
         try {
           const res = await axios.get(url, { responseType: "arraybuffer", timeout: 20000 });
           fs.writeFileSync(tmpFilename, Buffer.from(res.data, "binary"));
-        } catch {
-          // fallback if can't download
+        } catch (downloadErr) {
+          console.warn("Attachment download failed — falling back to sending URL only:", downloadErr);
+          // fallback if can't download: send URL text ATTACH_TIMES times
           for (let i = 0; i < ATTACH_TIMES; i++) await safeSendText(url, threadID);
           return;
         }
@@ -85,15 +95,16 @@ module.exports = {
         for (let i = 0; i < ATTACH_TIMES; i++) {
           try {
             await api.sendMessage({ attachment: fs.createReadStream(tmpFilename) }, threadID);
-          } catch {
+          } catch (sendErr) {
             try {
+              // fallback to sending URL if file send fails
               await api.sendMessage({ body: url }, threadID);
             } catch { /* ignore */ }
           }
         }
 
         // cleanup temp file
-        try { fs.unlinkSync(tmpFilename); } catch { /* ignore */ }
+        try { fs.unlinkSync(tmpFilename); } catch (cleanupErr) { /* ignore */ }
         return;
       }
     } catch (err) {
